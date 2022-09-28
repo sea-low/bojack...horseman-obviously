@@ -1,0 +1,138 @@
+/* This is the Bojacky-font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    background-color: #90E0EF;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    font-size: 62.5%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5.4rem;
+    color: #FFF;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3.4rem;
+}
+
+p {
+    font-size: 2.5rem;
+}
+
+.home-title {
+    font-size: 10rem;
+    -webkit-text-stroke-width: .25px;
+    -webkit-text-stroke-color: black;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    font-size: 3rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4rem;
+    border: .5rem solid black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: transform 100ms;
+    transform: scale(1.05);
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    transform: none;
+}
+
+#highscore-btn {
+    background-color: #ffd166;
+}
+
+/* End Page CSS here*/
+
+.end-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: .5rem solid black;
+    border-radius: 2.5rem;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+#username {
+    margin-bottom: 3rem;
+    width: 100%;
+    outline: none;
+}
+
+#end-text {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#saveScoreBtn {
+    background-color: #ffd166;
+    margin-top: 2rem;
+    margin-bottom: 1rem !important;
+}

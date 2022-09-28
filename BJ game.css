@@ -1,0 +1,72 @@
+.choice-container {
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    background-color: white;
+    border-radius: 4rem;
+    border: .2rem solid black;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    transition: transform 100ms;
+    transform: scale(1.05);
+}
+
+.choice-prefix {
+    padding: 2rem 2.5rem;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 100%;
+}
+
+.correct {
+    background-color: #06d6a0;
+}
+
+.incorrect {
+    background-color: #ef476f;
+}
+
+/* Heads up Display */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 3rem;
+    border: .2rem solid black;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    background: white;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: #ffd166;
+    width: 0%;
+}
+
+@media screen and (max-width: 760px) {
+    .choice-container {
+        min-width: 40rem;
+    }
+}
